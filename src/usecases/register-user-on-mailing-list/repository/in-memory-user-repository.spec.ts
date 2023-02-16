@@ -26,7 +26,7 @@ describe('In memory User repository', () => {
     ]
 
     const sut = new InMemoryUserRepository(users)
-    const returnedUsers = await sut.findAllUser()
+    const returnedUsers = await sut.findAllUsers()
     expect(returnedUsers.length).toBe(2)
   })
 })
